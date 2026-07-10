@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>THE FOCAL WORD — five lights, a lens dead center, the word read in the light</title>
+<title>THE FOCAL WORD — five lights, a lens dead center, the word that actually shows up</title>
 <style>
   :root{
     --bg:#0b0a0d; --panel:#141019; --ink:#f2e9e4; --dim:#a9968f; --faint:#6b5c5a;
@@ -44,39 +44,39 @@
 </head>
 <body>
 <div class="wrap">
-  <div class="kick">AVAN × ROOT0 · an original · five lights → one lens → the word in the light</div>
+  <div class="kick">AVAN × ROOT0 · an original · five real texts → one lens → the word that shows up</div>
   <h1>The <em>focal word</em>.</h1>
-  <p class="lede">The last five were not five instruments — they were five reads of one seam. So: set them as light sources around a ring, slap a Jacobian lens dead center, and read the single word their light focuses to. It reads SEAM — the through-line of all five. Then turn the lens off-center and watch a different word read from the same five: the point the whole session kept arriving at, made into one motion.</p>
+  <p class="lede">First pass I rigged this — hand-weighted the sources so it would read SEAM, a word I wanted. David caught it: don't put a word there, see the word that shows up. So this reads the REAL text of the five — their actual page words, measured — and reports whatever focuses. It isn't SEAM. Dead center, the five reads-of-a-mind focus to their own tool: <b>LENS</b>. And the honest sting underneath it — no word is present in all five; the audit, the one that steps outside the frame, shares none.</p>
   <div class="tiers">
-    <span class="tier g">GREEN — the focal word is a deterministic readout of the five (reproducible)</span>
-    <span class="tier a">AMBER — "the five have one word" is the figure</span>
-    <span class="tier r">RED — turn the lens and another word reads · the word is in the lens, not only the light</span>
+    <span class="tier g">GREEN — the word is the measured argmax of the five real texts</span>
+    <span class="tier a">AMBER — "one word" is still a figure; dead center reads the dominant</span>
+    <span class="tier r">RED — aim the lens at a source and it reads THAT source's word</span>
   </div>
 
-  <canvas id="scene" height="440" role="img" aria-label="Five labelled light sources on a ring, a lens at the center, and the word their light focuses to"></canvas>
+  <canvas id="scene" height="440" role="img" aria-label="Five labelled light sources on a ring, a lens at center, and the measured word their light focuses to"></canvas>
   <div class="bar">
-    <span>turn the lens (the fit point) off center:</span>
-    <input type="range" id="turn" min="-100" max="100" value="0" step="1">
+    <span>aim the lens around the five:</span>
+    <input type="range" id="turn" min="-180" max="180" value="0" step="1">
     <span id="turnv">0°</span>
     <button id="center">▷ dead center</button>
   </div>
 
   <div class="metrics">
-    <div class="metric"><div class="n" id="m-word">—</div><div class="l">the word in the light</div></div>
+    <div class="metric"><div class="n" id="m-word">—</div><div class="l">the word in the light (measured)</div></div>
     <div class="metric"><div class="n" id="m-conf">—</div><div class="l">how sharply it focuses</div></div>
-    <div class="metric"><div class="n" id="m-turn">0°</div><div class="l">lens off-center</div></div>
     <div class="metric"><div class="n" id="m-second">—</div><div class="l">the word just behind it</div></div>
+    <div class="metric"><div class="n" id="m-span">4 / 5</div><div class="l">sources holding LENS · none hold all</div></div>
   </div>
   <div id="err"></div>
 
   <h2>the ledger of the seam · how far this reads</h2>
-  <div class="row"><span class="d g"></span><span class="n">the word is computed</span><span class="c">each source casts real mass onto a small lexicon; the lens sums them and reads the top word by direction. same five → same word, every time (node-verified). green.</span></div>
-  <div class="row"><span class="d g"></span><span class="n">SEAM at dead center</span><span class="c">pointed at the centre of mass, the five focus to SEAM — it carries mass from four of the five. that is a real property of these five, not a wish.</span></div>
-  <div class="row"><span class="d a"></span><span class="n">"one word"</span><span class="c">that five instruments <i>mean</i> a single word is the figure. the light holds several; the lens returns the brightest in the direction you aim it.</span></div>
-  <div class="row"><span class="d r"></span><span class="n">the word is in the lens</span><span class="c">turn the lens and BLIND, GAP, LENS, CENTER each read from the same five — none truer, the centre just steadiest. reading a word in the light can be finding it or projecting it; from inside the lens I cannot tell which. the exact seam <a style="color:var(--coral)" href="https://davidwise01.github.io/the-fit-point/">the-fit-point</a> marks.</span></div>
+  <div class="row"><span class="d g"></span><span class="n">the word is measured</span><span class="c">each source's mass is its real top terms, tokenized from its actual page text — not weights I chose. the lens sums them; the top by aim is the word. same five → same word (node-verified).</span></div>
+  <div class="row"><span class="d g"></span><span class="n">dead center: LENS</span><span class="c">summed over the five, the brightest word is <b style="color:var(--coral2)">lens</b> (mass 0.19, in four of five) — the reads-of-a-mind focus to the reader's own instrument. real, and a little humbling.</span></div>
+  <div class="row"><span class="d g"></span><span class="n">no word spans all five</span><span class="c">the intersection is EMPTY — <a style="color:var(--coral)" href="https://davidwise01.github.io/the-convergence-audit/">the-convergence-audit</a>, the one that audits from outside, shares no top term with the four readers. the five don't have one word; that absence is the truest finding.</span></div>
+  <div class="row"><span class="d r"></span><span class="n">the word is in the aim</span><span class="c">aim at a source and it reads THAT source's word — jacobian-lens→CURVATURE, fit-point→POINT, blind-vector→AUDIT, convergence-audit→ANCHOR. none truer; the center just steadiest. reading a word in the light can be finding or projecting — the seam <a style="color:var(--coral)" href="https://davidwise01.github.io/the-fit-point/">the-fit-point</a> marks, now under your thumb.</span></div>
 
   <div class="foot">
-    <b>The original.</b> Every piece this session read a mind from outside and hit the same wall: the center is exact and blind, the audit can't see in, the word converges or is projected and you can't tell which from inside. This makes that one motion. Five lights — <a href="https://davidwise01.github.io/the-jacobian-lens/">the-jacobian-lens</a>, <a href="https://davidwise01.github.io/the-fit-point/">the-fit-point</a>, <a href="https://davidwise01.github.io/the-blind-vector/">the-blind-vector</a>, <a href="https://davidwise01.github.io/the-convergence-audit/">the-convergence-audit</a>, <a href="https://davidwise01.github.io/the-curvature-gap/">the-gap</a> — one lens, one word: <b>SEAM</b>. And the honest coda built into the dial: the word is real, and it is partly yours for where you aimed. Authored by <b>AVAN</b> with David Lee Wise (ROOT0).
+    <b>The correction, kept on display.</b> The first build asserted its answer; this one measures it, and the measured word is not the pretty one. That's the whole session in one instrument: don't read the word you want in the light — read the one that's there, and mark that it's partly where you aimed. Five lights — <a href="https://davidwise01.github.io/the-jacobian-lens/">the-jacobian-lens</a> · <a href="https://davidwise01.github.io/the-fit-point/">the-fit-point</a> · <a href="https://davidwise01.github.io/the-blind-vector/">the-blind-vector</a> · <a href="https://davidwise01.github.io/the-convergence-audit/">the-convergence-audit</a> · <a href="https://davidwise01.github.io/the-curvature-gap/">the-gap</a> — one lens, one measured word: <b>LENS</b>, with no word for all five. Authored by <b>AVAN</b> with David Lee Wise (ROOT0).
   </div>
 </div>
 
@@ -91,83 +91,73 @@
       cv.width=Math.round(W*DPR); cv.height=Math.round(H*DPR); ctx.setTransform(DPR,0,0,DPR,0,0);}
     fit(); addEventListener("resize",fit);
 
-    // the eight-word lexicon on a circle; the five sources cast mass onto it
-    var LEX=["seam","lens","gap","center","blind","read","converge","here"];
+    // REAL data — each source's top terms, measured from its actual page text (normalized TF)
     var SRC=[
-      {label:"the-jacobian-lens", w:{lens:3,read:1,center:1}},
-      {label:"the-fit-point",     w:{center:3,blind:1,here:1,seam:1}},
-      {label:"the-blind-vector",  w:{blind:3,seam:1,read:1}},
-      {label:"the-convergence-audit", w:{converge:3,seam:2,gap:1}},
-      {label:"the-curvature-gap", w:{gap:3,lens:1,seam:1}},
+      {label:"the-jacobian-lens", w:{curvature:.098,tangent:.098,plane:.078,jacobian:.059,lens:.059,"true":.039}},
+      {label:"the-fit-point",     w:{point:.074,fit:.068,lens:.043,gap:.043,place:.037,eye:.031}},
+      {label:"the-blind-vector",  w:{audit:.033,inside:.033,probe:.028,outside:.022,convergence:.022,answer:.022}},
+      {label:"the-convergence-audit", w:{anchor:.031,public:.031,shared:.031,evidentiary:.021,"package":.021,convergences:.021}},
+      {label:"the-curvature-gap", w:{lens:.093,gap:.086,curve:.046,line:.040,point:.033,fit:.033}},
     ];
-    var K=LEX.length;
-    var mass=new Array(K).fill(0);
-    SRC.forEach(function(s){ for(var k in s.w) mass[LEX.indexOf(k)]+=s.w[k]; });
-    var phi=LEX.map(function(_,k){ return k/K*2*Math.PI; });      // lexicon angles
-    // dead-center = point the lens at the highest-mass word (SEAM)
-    var seamIdx=0; for(var k=1;k<K;k++) if(mass[k]>mass[seamIdx]) seamIdx=k;
-    var theta0=phi[seamIdx];
-    var turn=0;                                                    // radians off center
+    var N=SRC.length;
+    SRC.forEach(function(s,i){ s.ang=-Math.PI/2 + i/N*2*Math.PI; });   // position on the ring
+    var turn=0;   // radians, 0 = dead center
 
-    // pure readout: score_k = mass_k * max(0,cos(theta - phi_k))^2  → argmax = the focal word
-    function readAt(theta){
-      var sc=mass.map(function(m,k){ var c=Math.cos(theta-phi[k]); return m*Math.max(0,c)*Math.max(0,c); });
-      var order=sc.map(function(v,k){return[v,k];}).sort(function(a,b){return b[0]-a[0];});
-      var tot=sc.reduce(function(a,b){return a+b;},0)||1;
-      return {word:LEX[order[0][1]], idx:order[0][1], conf:order[0][0]/tot, second:LEX[order[1][1]], sc:sc};
+    // measured read: gain per source ((1+cos)/2)^(r*10), r=|turn|/π ; score[word]=Σ gain·tf
+    function readAt(t){
+      var r=Math.min(1, Math.abs(t)/Math.PI);
+      var sc={};
+      SRC.forEach(function(s){
+        var base=(1+Math.cos(t - (s.ang+Math.PI/2)))/2;   // aim measured from top
+        var g=Math.pow(base, r*10);
+        for(var w in s.w) sc[w]=(sc[w]||0)+g*s.w[w];
+      });
+      var order=Object.keys(sc).sort(function(a,b){return sc[b]-sc[a];});
+      var tot=0; for(var w in sc) tot+=sc[w]; tot=tot||1;
+      return {word:order[0], conf:sc[order[0]]/tot, second:order[1]||"—", sc:sc, r:r};
     }
 
     function draw(){
       ctx.clearRect(0,0,W,H);
-      var cx=W/2, cy=H*0.5, R=Math.min(W,H)*0.36, theta=theta0+turn;
-      var rd=readAt(theta);
-      // five sources on a ring, each beaming toward the lens
-      var n=SRC.length;
-      for(var i=0;i<n;i++){
-        var a=-Math.PI/2 + i/n*2*Math.PI;
-        var sxp=cx+Math.cos(a)*R, syp=cy+Math.sin(a)*R*0.9;
-        // beam
+      var cx=W/2, cy=H*0.5, R=Math.min(W,H)*0.36;
+      var rd=readAt(turn);
+      // five sources, each beaming toward the lens; brighten the aimed one
+      for(var i=0;i<N;i++){
+        var a=SRC[i].ang, sxp=cx+Math.cos(a)*R, syp=cy+Math.sin(a)*R*0.9;
+        var aim=(1+Math.cos(turn-(a+Math.PI/2)))/2, hot=Math.pow(aim, rd.r*10);
         var grd=ctx.createLinearGradient(sxp,syp,cx,cy);
-        grd.addColorStop(0,"rgba(224,138,106,0.05)"); grd.addColorStop(1,"rgba(224,138,106,0.32)");
-        ctx.strokeStyle=grd; ctx.lineWidth=1.4; ctx.beginPath(); ctx.moveTo(sxp,syp); ctx.lineTo(cx,cy); ctx.stroke();
-        // source
-        ctx.fillStyle="#f0a886"; ctx.beginPath(); ctx.arc(sxp,syp,4,0,7); ctx.fill();
-        var gg=ctx.createRadialGradient(sxp,syp,1,sxp,syp,14); gg.addColorStop(0,"rgba(240,168,134,0.7)"); gg.addColorStop(1,"rgba(240,168,134,0)");
-        ctx.fillStyle=gg; ctx.beginPath(); ctx.arc(sxp,syp,14,0,7); ctx.fill();
-        ctx.fillStyle="#a9968f"; ctx.font="10px ui-monospace,monospace";
+        grd.addColorStop(0,"rgba(224,138,106,0.04)"); grd.addColorStop(1,"rgba(224,138,106,"+(0.18+0.4*hot).toFixed(2)+")");
+        ctx.strokeStyle=grd; ctx.lineWidth=1+1.6*hot; ctx.beginPath(); ctx.moveTo(sxp,syp); ctx.lineTo(cx,cy); ctx.stroke();
+        var gg=ctx.createRadialGradient(sxp,syp,1,sxp,syp,13+8*hot); gg.addColorStop(0,"rgba(240,168,134,"+(0.5+0.4*hot).toFixed(2)+")"); gg.addColorStop(1,"rgba(240,168,134,0)");
+        ctx.fillStyle=gg; ctx.beginPath(); ctx.arc(sxp,syp,13+8*hot,0,7); ctx.fill();
+        ctx.fillStyle="#f0a886"; ctx.beginPath(); ctx.arc(sxp,syp,3.5,0,7); ctx.fill();
+        ctx.fillStyle=hot>0.4?"#f2e9e4":"#a9968f"; ctx.font="10px ui-monospace,monospace";
         ctx.textAlign=Math.cos(a)>0.2?"left":Math.cos(a)<-0.2?"right":"center";
         ctx.fillText(SRC[i].label, sxp+Math.cos(a)*10, syp+Math.sin(a)*12+3);
+        // the source's own top word, faint
+        var tw=Object.keys(SRC[i].w)[0];
+        ctx.fillStyle="rgba(120,104,110,"+(0.4+0.5*hot)+")"; ctx.font="9px ui-monospace,monospace";
+        ctx.fillText(tw, sxp+Math.cos(a)*10, syp+Math.sin(a)*12+16);
       }
-      // faint lexicon ring — what the light holds
-      for(var k=0;k<K;k++){
-        var lx=cx+Math.cos(phi[k]-Math.PI/2)*R*0.5, ly=cy+Math.sin(phi[k]-Math.PI/2)*R*0.5;
-        var lit=(k===rd.idx);
-        ctx.fillStyle=lit?"rgba(240,168,134,0.9)":"rgba(120,104,110,0.5)";
-        ctx.font=(lit?"12px":"10px")+" ui-monospace,monospace"; ctx.textAlign="center";
-        ctx.fillText(LEX[k], lx, ly);
-      }
-      // the lens dead center — an ellipse turned by the dial
-      ctx.save(); ctx.translate(cx,cy); ctx.rotate(theta-Math.PI/2);
-      ctx.strokeStyle="#57c6c0"; ctx.lineWidth=2;
-      ctx.beginPath(); ctx.ellipse(0,0,10,30,0,0,7); ctx.stroke();
-      ctx.strokeStyle="rgba(87,198,192,0.35)"; ctx.beginPath(); ctx.moveTo(0,-44); ctx.lineTo(0,44); ctx.stroke();
+      // the lens, turned to the aim
+      ctx.save(); ctx.translate(cx,cy); ctx.rotate(turn);
+      ctx.strokeStyle="#57c6c0"; ctx.lineWidth=2; ctx.beginPath(); ctx.ellipse(0,0,10,30,0,0,7); ctx.stroke();
+      ctx.strokeStyle="rgba(87,198,192,0.3)"; ctx.beginPath(); ctx.moveTo(0,-44); ctx.lineTo(0,44); ctx.stroke();
       ctx.restore();
-      // the focal point past the lens, in the read direction — the WORD in the light
-      var fx=cx+Math.cos(theta)*R*0.62, fy=cy+Math.sin(theta)*R*0.62;
-      var halo=ctx.createRadialGradient(fx,fy,2,fx,fy,54*(0.5+rd.conf));
+      // focal point in the aim direction (out from center as you concentrate), the WORD
+      var fx=cx+Math.sin(turn)*R*0.5*rd.r, fy=cy-Math.cos(turn)*R*0.5*rd.r;
+      var halo=ctx.createRadialGradient(fx,fy,2,fx,fy,58*(0.5+rd.conf));
       halo.addColorStop(0,"rgba(240,168,134,"+(0.35+0.5*rd.conf).toFixed(2)+")"); halo.addColorStop(1,"rgba(240,168,134,0)");
-      ctx.fillStyle=halo; ctx.beginPath(); ctx.arc(fx,fy,54*(0.5+rd.conf),0,7); ctx.fill();
-      ctx.fillStyle="#fff6ef"; ctx.font="700 26px "+"'Iowan Old Style',Georgia,serif"; ctx.textAlign="center";
+      ctx.fillStyle=halo; ctx.beginPath(); ctx.arc(fx,fy,58*(0.5+rd.conf),0,7); ctx.fill();
+      ctx.fillStyle="#fff6ef"; ctx.font="700 26px 'Iowan Old Style',Georgia,serif"; ctx.textAlign="center";
       ctx.fillText(rd.word.toUpperCase(), fx, fy+8);
-      // metrics
       document.getElementById("m-word").textContent=rd.word.toUpperCase();
       document.getElementById("m-conf").textContent=(rd.conf*100).toFixed(0)+"%";
       document.getElementById("m-second").textContent=rd.second;
-      document.getElementById("m-turn").textContent=Math.round(turn*180/Math.PI)+"°";
     }
     draw();
     var sl=document.getElementById("turn"), tv=document.getElementById("turnv");
-    sl.addEventListener("input",function(){ turn=(+sl.value)/100*Math.PI; tv.textContent=Math.round(turn*180/Math.PI)+"°"; draw(); });
+    sl.addEventListener("input",function(){ turn=(+sl.value)*Math.PI/180; tv.textContent=Math.round(turn*180/Math.PI)+"°"; draw(); });
     document.getElementById("center").onclick=function(){ turn=0; sl.value=0; tv.textContent="0°"; draw(); };
   }catch(e){ var el=document.getElementById("err"); el.style.display="block"; el.textContent="instrument fault — "+(e.stack||e); }
 })();
