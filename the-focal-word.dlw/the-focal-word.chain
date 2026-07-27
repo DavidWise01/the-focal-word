@@ -1,9 +1,9 @@
 ROOT0-DLW-CHAIN-v1
 index : 1206
 slug  : the-focal-word
-seal  : f397d05b7550678e5bcb58a50d28c1bc1947c476de40ea9235f326e7c7fd4d05
-prev  : 59c8b5a1d87cfe614ebc4b0605161e22ed67c443752fd9f4bdaa8f0292edee7c
-link  : f26dcc0ac68d0d8141c11463544f14132aa80c4cea57f71c86901ae26a2ddfcd
-head  : f26dcc0ac68d0d8141c11463544f14132aa80c4cea57f71c86901ae26a2ddfcd
+seal  : c66184f65137d27ef5d3f1e536d6c18eb881570ee0ecc943eb8fba20e37daa4e
+prev  : f97465f69957458dcdc55d68ea07cef13e44c531379e280bcf40a3a2702c7c58
+link  : 6a7285fb864e9b79b04c301fb47722bfcf1ceed532c8a356de947138b778a898
+head  : c4d41afeaef76470528856d54d86cf480a0e1c2fc8ebc60fbb9eb8e442585f2b
 
 — the tether: link = sha256(index|slug|seal|prev). the chain head commits to the whole corpus.
